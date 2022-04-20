@@ -312,9 +312,57 @@
                     <div class="card-body">
                       <h5 class="card-title">Linguagens de programação</h5>
                       <ul class="list-group list-group-flush">
-                        <li class="list-group-item">C</li>
-                        <li class="list-group-item">Python</li>
-                        <li class="list-group-item">C#</li>
+                        
+                        <li class="list-group-item">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="c">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c-collapse" aria-expanded="false" aria-controls="c-collapse">
+                                C
+                              </button>
+                            </h2>
+                            <div id="c-collapse" class="accordion-collapse collapse" aria-labelledby="c" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <p>Linguagem de programação <i>C</i> utilizado em "algoritmos e técnicas de programação 1 e 2"</p>
+                                <p>Além da sua utilização em "estrutura de dados 1 e 2"</p>
+                              </div>
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="c-sharp">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c-sharp-collapse" aria-expanded="false" aria-controls="c-sharp-collapse">
+                                C#
+                              </button>
+                            </h2>
+                            <div id="c-sharp-collapse" class="accordion-collapse collapse" aria-labelledby="c-sharp" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                Utilização da linguagem de programação <i>C#</i> em "programação orientado à objetos 1"
+                              </div>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="python">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#python-collapse" aria-expanded="false" aria-controls="python-collapse">
+                                Python
+                              </button>
+                            </h2>
+                            <div id="python-collapse" class="accordion-collapse collapse" aria-labelledby="python" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                Estudo da linguagem de programação <i>Python</i> com foco em modulos de <i>data science</i> <br>
+                                <ul>
+                                  <li><a href="https://pandas.pydata.org/about/">Pandas</a></li>
+                                  <li><a href="https://numpy.org/about/">Numpy</a></li>
+                                  <li><a href="https://matplotlib.org/">Matplotlib</a></li>
+                                  <li><a href="https://docs.python-requests.org/en/latest/">Requests</a></li>
+                                  <li><a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">Beautiful Soup</a></li>
+                                </ul>
+                              </div>
+                            </div>
+
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -355,7 +403,7 @@
           </interesses>
 
           <contato>
-            <div class="space">
+            <div class="space" style="width: 250px;">
               <div class="title" id="contato">
                 <i class="bi bi-person-circle"></i>Contato
               </div>
@@ -401,36 +449,6 @@
           </contato>
 
           <license>
-            <!-- <div class="collapse" id="license">
-                        <div class="card card-body">
-                            <a href="https://getbootstrap.com/docs/4.0/about/license/">Bootstrap is released under the
-                                MIT license and is copyright 2018 Twitter.</a><br>
-                            The MIT License (MIT)<br>
-
-                            Copyright (c) 2011-2018 Twitter, Inc. <br>
-                            Copyright (c) 2011-2018 The Bootstrap Authors<br>
-                            <p> Permission is hereby granted, free of charge, to any person obtaining a copy
-                                of this software and associated documentation files (the "Software"), to deal
-                                in the Software without restriction, including without limitation the rights
-                                to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-                                copies of the Software, and to permit persons to whom the Software is
-                                furnished to do so, subject to the following conditions:</p>
-                            <p> The above copyright notice and this permission notice shall be included in
-                                all copies or substantial portions of the Software.</p>
-                            <p> THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-                                IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-                                FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-                                AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-                                LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-                                OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-                                THE SOFTWARE.</p>
-                        </div>
-                    </div>
-                    <div style="text-align: center; margin-bottom: 100px;">
-                        <a data-bs-toggle="collapse" href="#license">
-                            license
-                        </a>
-                    </div> -->
             <div class="accordion" id="license" style="padding-bottom: 20px">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="license-accordion">
@@ -497,7 +515,6 @@
         </div>
       </div>
     </background>
-
     <script src="./js/script.js"></script>
   </body>
 </html>
