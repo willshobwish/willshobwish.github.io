@@ -1,0 +1,5 @@
+<div class="menu">
+  <div *ngFor="let items of RotasCorretas">
+    <a [routerLink]="[items.path]">{{ items.path | titlecase }}</a>
+  </div>
+</div>

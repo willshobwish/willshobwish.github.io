@@ -1,0 +1,31 @@
+{{ today | date: "medium" }}
+<!-- <div class="posts">
+  <div *ngFor="let item of contents" class="content">
+    <div>{{ item.name }}</div>
+    <div>{{ item.content }}</div>
+    <div *ngIf="item.link">
+      <a href="{{ item.link.link }}" target="_blank">{{
+        item.link.name | titlecase
+      }}</a>
+    </div>
+  </div>
+</div> -->
+<div style="display: flex; justify-content: space-around">
+  <div class="card" style="width: 18rem" *ngFor="let item of contents">
+    <!-- <img src="..." class="card-img-top" alt="..." /> -->
+    <div class="card-body">
+      <h5 class="card-title">{{ item.name }}</h5>
+      <p class="card-text">
+        {{ item.content }}
+      </p>
+      <div *ngIf="item.link">
+        <a
+          href="{{ item.link.link }}"
+          target="_blank"
+          class="btn btn-primary"
+          >{{ item.link.name | titlecase }}</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
