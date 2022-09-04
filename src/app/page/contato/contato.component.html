@@ -1,1 +1,5 @@
-<p>contato works!</p>
+<ul class="list-group">
+  <li *ngFor="let item of dados" class="list-group-item">
+    {{ item.name }} <a href="{{ item.link }}"><br />{{ item.user }}</a>
+  </li>
+</ul>

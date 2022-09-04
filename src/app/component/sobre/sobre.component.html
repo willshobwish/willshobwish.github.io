@@ -1,0 +1,19 @@
+<div style="display: flex; justify-content: space-around">
+  <div class="card" style="width: 18rem" *ngFor="let item of dados">
+    <!-- <img src="..." class="card-img-top" alt="..." /> -->
+    <div class="card-body">
+      <h5 class="card-title">{{ item.titulo }}</h5>
+      <p class="card-text" *ngFor="let item of item.lista">
+        {{ item }}
+      </p>
+      <!-- <div *ngIf="item.link" style="display: flex; flex-direction: column">
+        <a
+          *ngFor="let item of item.link"
+          href="{{ item.link }}"
+          target="_blank"
+          >{{ item.name }}</a
+        >
+      </div> -->
+    </div>
+  </div>
+</div>

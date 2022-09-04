@@ -1,10 +1,13 @@
 import { content } from 'src/app/interfaces/posts';
 export const contents: content[] = [
   {
-    id: 10,
+    id: 0,
     name: 'Teste',
     content: 'Google teste',
-    link: { name: 'Google', link: 'https://www.google.com/' },
+    link: [
+      { name: 'Google', link: 'https://www.google.com/' },
+      { name: 'Youtube', link: 'https://www.youtube.com/' },
+    ],
   },
   {
     id: 10,

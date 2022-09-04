@@ -8,6 +8,13 @@ import { PostsComponent } from './page/posts/posts.component';
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'contato', component: ContatoComponent },
+  // {
+  //   path: 'contato',
+  //   loadChildren: () =>
+  //     import('./page/contato/contato.component').then(
+  //       (m) => m.ContatoComponent
+  //     )
+  // },
   { path: 'posts', component: PostsComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: Erro404Component },

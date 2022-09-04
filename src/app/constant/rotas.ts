@@ -6,8 +6,9 @@ import { Routes } from '@angular/router';
 
 export const rotas: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'contato', component: ContatoComponent },
+
   { path: 'posts', component: PostsComponent },
+  { path: 'contato', component: ContatoComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: Erro404Component },
 ];

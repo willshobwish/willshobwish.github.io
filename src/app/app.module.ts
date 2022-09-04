@@ -11,6 +11,8 @@ import { ContatoComponent } from './page/contato/contato.component';
 import { Erro404Component } from './page/erro404/erro404.component';
 import { PostsComponent } from './page/posts/posts.component';
 import localePT from '@angular/common/locales/pt';
+import { SobreComponent } from './component/sobre/sobre.component';
+import { LicenseComponent } from './component/license/license.component';
 
 registerLocaleData(localePT);
 @NgModule({
@@ -21,6 +23,8 @@ registerLocaleData(localePT);
     ContatoComponent,
     Erro404Component,
     PostsComponent,
+    SobreComponent,
+    LicenseComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [{ provide: LOCALE_ID, useValue: 'pt-br' }],
