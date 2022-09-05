@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { dadoscontato } from 'src/app/constant/contato';
-
 @Component({
   selector: 'app-contato',
   templateUrl: './contato.component.html',

@@ -10,8 +10,5 @@ export class MenuComponent implements OnInit {
 
   RotasCorretas = rotas;
 
-  ngOnInit(): void {
-    this.RotasCorretas.pop();
-    this.RotasCorretas.pop();
-  }
+  ngOnInit(): void {}
 }
