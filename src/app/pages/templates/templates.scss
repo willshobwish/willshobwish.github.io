@@ -1,0 +1,45 @@
+/* github-repos.component.scss */
+.repo-list {
+  max-width: 800px;
+  margin: 0 auto;
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .repo-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+
+    .repo-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+
+      a {
+        font-weight: bold;
+        text-decoration: none;
+        color: #0366d6;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .repo-stats {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      display: flex;
+      gap: 15px;
+    }
+  }
+}
