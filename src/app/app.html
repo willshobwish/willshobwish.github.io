@@ -1,2 +1,40 @@
-<menu></menu>
-<router-outlet />
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<app-site-header />
+<main id="conteudo">
+  <app-hero-section />
+  <app-about-section />
+  <div id="pesquisa" class="deferred-anchor">
+    @defer (on idle; on viewport) {
+      <app-research-section />
+    } @placeholder {
+      <section class="shell section-space deferred-placeholder" aria-busy="true" aria-label="Carregando pesquisas">
+        <p class="section-kicker">02 / Iniciação científica</p>
+        <h2 class="section-title mt-4">Perguntas que viraram pesquisa.</h2>
+      </section>
+    }
+  </div>
+  <div id="projetos" class="deferred-anchor">
+    @defer (on idle; on viewport) {
+      <app-repositories-section />
+    } @placeholder {
+      <section class="project-section section-space deferred-placeholder" aria-busy="true" aria-label="Carregando repositórios">
+        <div class="shell">
+          <p class="section-kicker">03 / Código aberto</p>
+          <h2 class="section-title mt-4">Repositórios em destaque.</h2>
+        </div>
+      </section>
+    }
+  </div>
+  <div id="materiais" class="deferred-anchor">
+    @defer (on idle; on viewport) {
+      <app-resources-section />
+    } @placeholder {
+      <section class="shell section-space deferred-placeholder" aria-busy="true" aria-label="Carregando materiais">
+        <p class="section-kicker">04 / Compartilhar conhecimento</p>
+        <h2 class="section-title mt-4">Minicursos e materiais.</h2>
+      </section>
+    }
+  </div>
+  <app-contact-section />
+</main>
+<app-site-footer />
