@@ -9,9 +9,9 @@ import { SectionHeading } from '../section-heading/section-heading';
   template: `
     <section class="shell section-space">
       <app-section-heading
-        eyebrow="02 / Iniciação científica"
-        title="Perguntas que viraram pesquisa."
-        description="Trabalhos apresentados no Congresso de Iniciação Científica da FCT Unesp, com orientação de Danilo Medeiros Eler."
+        eyebrow="Pesquisa"
+        title="Iniciação científica"
+        description="Trabalhos apresentados no Congresso de Iniciação Científica da FCT Unesp, orientados por Danilo Medeiros Eler."
       />
       <div class="mt-11 divide-y divide-line border-y border-line">
         @for (project of projects; track project.year) {

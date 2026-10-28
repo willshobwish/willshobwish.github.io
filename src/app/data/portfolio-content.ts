@@ -12,13 +12,11 @@ export interface ResearchProject {
 }
 
 export interface Repository {
-  number: string;
   name: string;
   title: string;
   summary: string;
   tags: string[];
   url: string;
-  note: string;
 }
 
 export interface Resource {
@@ -47,22 +45,22 @@ export const researchProjects: ResearchProject[] = [
 
 export const repositories: Repository[] = [
   {
-    number: '01', name: 'modelos-de-trabalho-latex', title: 'Modelos de trabalho em LaTeX',
+    name: 'modelos-de-trabalho-latex', title: 'Modelos de trabalho em LaTeX',
     summary: 'Modelos acadêmicos em LaTeX, incluindo um modelo de TCC para a FCT Unesp conforme as normas ABNT.',
     tags: ['LaTeX', 'Educação', 'Open source'],
-    url: 'https://github.com/willshobwish/modelos-de-trabalho-latex', note: 'Destaque em estrelas no perfil',
+    url: 'https://github.com/willshobwish/modelos-de-trabalho-latex',
   },
   {
-    number: '02', name: 'cacic-fct/event-manager', title: 'Gerenciador de eventos',
+    name: 'cacic-fct/event-manager', title: 'Gerenciador de eventos',
     summary: 'Aplicativo de eventos desenvolvido no contexto do centro acadêmico de Ciência da Computação da FCT Unesp.',
     tags: ['TypeScript', 'Comunidade', 'Web'],
-    url: 'https://github.com/cacic-fct/event-manager', note: 'Projeto colaborativo em destaque',
+    url: 'https://github.com/cacic-fct/event-manager',
   },
   {
-    number: '03', name: 'course-secompp-latex', title: 'Minicurso de LaTeX',
+    name: 'course-secompp-latex', title: 'Minicurso de LaTeX',
     summary: 'Repositório com o conteúdo do minicurso de introdução ao LaTeX oferecido na SECOMPP.',
     tags: ['LaTeX', 'Minicurso', 'Material aberto'],
-    url: 'https://github.com/willshobwish/course-secompp-latex', note: 'Conhecimento compartilhado',
+    url: 'https://github.com/willshobwish/course-secompp-latex',
   },
 ];
 

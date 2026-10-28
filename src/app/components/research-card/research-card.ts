@@ -7,7 +7,7 @@ import { TagList } from '../tag-list/tag-list';
   imports: [TagList],
   styles: ':host { display: block; }',
   template: `
-    <article class="research-row grid gap-5 py-8 md:grid-cols-[90px_1fr_auto] md:items-start md:gap-8">
+    <article class="list-row research-row">
       <span class="research-year">{{ project().year }}</span>
       <div>
         <h3 class="text-xl font-semibold tracking-tight text-ink md:text-2xl">{{ project().title }}</h3>

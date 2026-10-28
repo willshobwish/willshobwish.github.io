@@ -9,11 +9,11 @@ import { SectionHeading } from '../section-heading/section-heading';
   template: `
     <section class="shell section-space">
       <app-section-heading
-        eyebrow="04 / Compartilhar conhecimento"
-        title="Minicursos e materiais."
-        description="Recursos para aprender, ensinar e criar. Os materiais estão disponíveis nos links de cada tema."
+        eyebrow="Ensino"
+        title="Minicursos e materiais"
+        description="Aulas e recursos abertos que preparei para a comunidade acadêmica."
       />
-      <div class="mt-11 grid gap-4 md:grid-cols-3">
+      <div class="mt-11 border-t border-line">
         @for (resource of items; track resource.title) {
           <app-resource-card [resource]="resource" />
         }

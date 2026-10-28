@@ -5,12 +5,12 @@ import { TagList } from '../tag-list/tag-list';
   selector: 'app-about-section',
   imports: [TagList],
   template: `
-    <section id="sobre" class="border-y border-line bg-white/65">
-      <div class="shell grid gap-8 py-16 md:grid-cols-[0.75fr_1.25fr] md:gap-20 md:py-20">
-        <div><p class="section-kicker">01 / Sobre</p><h2 class="section-title mt-4">Entre a pesquisa e a prática.</h2></div>
+    <section id="sobre" class="border-b border-line">
+      <div class="shell about-layout section-space">
+        <div><p class="section-kicker">Sobre</p><h2 class="section-title mt-4">Áreas de interesse</h2></div>
         <div class="text-base leading-8 text-muted">
-          <p>Minha trajetória reúne investigação em classificação de imagens com redes neurais convolucionais, desenvolvimento de software e produção de materiais para a comunidade acadêmica.</p>
-          <p class="mt-5">Tenho interesse em modelos de segmentação semântica, Vision Transformers e aprendizado autossupervisionado. Gosto de tornar temas técnicos mais acessíveis por meio de projetos e ensino.</p>
+          <p>Meus trabalhos de iniciação científica estudam classificação de imagens com redes neurais convolucionais, com foco em pré-processamento e aumento de dados.</p>
+          <p class="mt-5">Também desenvolvo software e publico materiais para apoiar atividades acadêmicas. Tenho interesse em segmentação semântica, Vision Transformers e aprendizado autossupervisionado.</p>
           <app-tag-list class="mt-7 block" [tags]="topics" variant="topic" />
         </div>
       </div>
